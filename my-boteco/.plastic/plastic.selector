@@ -1,0 +1,4 @@
+repository "my-boteco@my_boteco_team@cloud"
+  path "/"
+    br "/main"
+    co "/main"
