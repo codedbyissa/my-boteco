@@ -8,44 +8,71 @@ public class PlayerController : MonoBehaviour
     private Animator _playerAnimator;
     public float _playerSpeed;
     private Vector2 _playerDirection;
-    // Start is called before the first frame update
+
     void Start()
     {
         _playerRigidbody2D = GetComponent<Rigidbody2D>(); 
         _playerAnimator = GetComponent<Animator>(); 
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Resetando a direção do player
+        _playerDirection = Vector2.zero;
 
-        _playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        
+        // Movendo com as setas direcionais
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            _playerDirection.y = 1;
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            _playerDirection.y = -1;
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            _playerDirection.x = 1;
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            _playerDirection.x = -1;
+        }
+
+        // Verifica se há movimento e altera a animação
         if (_playerDirection.sqrMagnitude > 0)
         {
-            if(_playerDirection.y != 0){
+            if (_playerDirection.y != 0)
+            {
                 _playerAnimator.SetInteger("Movement", 0);
-            } else {
+            }
+            else
+            {
                 _playerAnimator.SetInteger("Movement", 1);
             }
-        } else {
+        }
+        else
+        {
             _playerAnimator.SetInteger("Movement", 0);
         }
-        Direction();
 
-        // Debug.Log("O valor de Movement é: " +  _playerAnimator.GetInteger("Movement"));
-        
+        Direction();
     }
 
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
+        // Movimenta o player com base na direção e velocidade
         _playerRigidbody2D.MovePosition(_playerRigidbody2D.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);
     }
 
     void Direction() {
+
         if(_playerDirection.y > 0){
             _playerAnimator.SetInteger("Direction", 2);
+            _playerAnimator.SetInteger("StaticDirection", 0);
         } else if(_playerDirection.y < 0) {
             _playerAnimator.SetInteger("Direction", 1);
+            _playerAnimator.SetInteger("StaticDirection", 0);
         } else if(Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow)) {  
             _playerAnimator.SetInteger("Direction", 0);
         } else {
@@ -55,6 +82,18 @@ public class PlayerController : MonoBehaviour
             } else if(_playerDirection.x < 0){
                 transform.eulerAngles = new Vector2(0f, 180f);
             }
-        }                
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+            _playerAnimator.SetInteger("StaticDirection", 1);
+        } else if(Input.GetKeyDown(KeyCode.RightArrow)){
+            _playerAnimator.SetInteger("StaticDirection", 1);
+        } else if(Input.GetKeyUp(KeyCode.UpArrow)){
+            _playerAnimator.SetInteger("StaticDirection", 2);
+        } else if(Input.GetKeyUp(KeyCode.DownArrow)) {
+            _playerAnimator.SetInteger("StaticDirection", 3);
+        }
+
+              
     }
 }
