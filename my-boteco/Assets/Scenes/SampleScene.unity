@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 34893664}
   - component: {fileID: 34893665}
   m_Layer: 0
-  m_Name: island_bottom (7)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 56186705}
   - component: {fileID: 56186704}
   m_Layer: 0
-  m_Name: benche (3)
+  m_Name: benche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,7 +557,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.12792984}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -568,7 +568,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.010106094}
   m_EdgeRadius: 0
 --- !u!212 &56186706
 SpriteRenderer:
@@ -652,9 +652,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 209450096}
   - {fileID: 1614888885}
-  - {fileID: 447400907}
+  - {fileID: 209450096}
   - {fileID: 1125063314}
   - {fileID: 1005687790}
   - {fileID: 1730887556}
@@ -665,7 +664,6 @@ Transform:
   - {fileID: 34893662}
   - {fileID: 2141023402}
   - {fileID: 1523982541}
-  - {fileID: 1190766547}
   - {fileID: 1634963696}
   - {fileID: 891427223}
   - {fileID: 1049904366}
@@ -1576,7 +1574,7 @@ GameObject:
   - component: {fileID: 165187581}
   - component: {fileID: 165187582}
   m_Layer: 0
-  m_Name: island_bottom (6)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2045,7 +2043,7 @@ Transform:
   m_GameObject: {fileID: 232743344}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.9935, y: 4.1244, z: 0}
+  m_LocalPosition: {x: 0.99, y: 4.39, z: 0}
   m_LocalScale: {x: 0.15035142, y: 18.255259, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2159,7 +2157,7 @@ GameObject:
   - component: {fileID: 236461098}
   - component: {fileID: 236461099}
   m_Layer: 0
-  m_Name: island_side_right (1)
+  m_Name: island_side_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2843,7 +2841,7 @@ GameObject:
   - component: {fileID: 300463688}
   - component: {fileID: 300463689}
   m_Layer: 0
-  m_Name: island_side_right
+  m_Name: island_side_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3822,7 +3820,7 @@ Transform:
   m_GameObject: {fileID: 361707818}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.881, y: 0.698, z: 0}
+  m_LocalPosition: {x: -1.881, y: 0.71999997, z: 0}
   m_LocalScale: {x: 1.1639, y: 1.159, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4179,9 +4177,8 @@ GameObject:
   m_Component:
   - component: {fileID: 447400907}
   - component: {fileID: 447400909}
-  - component: {fileID: 447400908}
   m_Layer: 0
-  m_Name: island_bottom (4)
+  m_Name: island_side_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4200,53 +4197,8 @@ Transform:
   m_LocalScale: {x: 3.1944, y: 3.6378, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 69984127}
+  m_Father: {fileID: 1200273082}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &447400908
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447400906}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.068307795}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.32}
-    newSize: {x: 0.16, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.16338442}
-  m_EdgeRadius: 0
 --- !u!212 &447400909
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4559,6 +4511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 472967561}
   - component: {fileID: 472967562}
+  - component: {fileID: 472967563}
   m_Layer: 0
   m_Name: Drink
   m_TagString: Untagged
@@ -4575,7 +4528,7 @@ Transform:
   m_GameObject: {fileID: 472967560}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1546001, y: 0.8188, z: 0}
+  m_LocalPosition: {x: -2.1546001, y: 0.8407999, z: 0}
   m_LocalScale: {x: 1.1639, y: 1.159, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4633,6 +4586,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!893571522 &472967563
+CustomCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472967560}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_CustomShapes:
+    m_Shapes: []
+    m_Vertices: []
 --- !u!1 &478914390
 GameObject:
   m_ObjectHideFlags: 0
@@ -4645,7 +4634,7 @@ GameObject:
   - component: {fileID: 478914392}
   - component: {fileID: 478914393}
   m_Layer: 0
-  m_Name: island_side_right
+  m_Name: island_side_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5431,7 +5420,7 @@ GameObject:
   - component: {fileID: 529578047}
   - component: {fileID: 529578046}
   m_Layer: 0
-  m_Name: benche (9)
+  m_Name: benche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5519,7 +5508,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.12600201}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5530,7 +5519,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.010105997}
   m_EdgeRadius: 0
 --- !u!212 &529578048
 SpriteRenderer:
@@ -5909,7 +5898,7 @@ Transform:
   m_GameObject: {fileID: 610444126}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 9.5747, y: -1.869, z: 0}
+  m_LocalPosition: {x: 9.5747, y: -1.526, z: 0}
   m_LocalScale: {x: 0.14904638, y: 1.1233829, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6025,7 +6014,7 @@ GameObject:
   - component: {fileID: 634221920}
   - component: {fileID: 634221919}
   m_Layer: 0
-  m_Name: benche (2)
+  m_Name: benche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6113,7 +6102,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.1260019}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6124,7 +6113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.010106102}
   m_EdgeRadius: 0
 --- !u!212 &634221921
 SpriteRenderer:
@@ -6395,7 +6384,7 @@ GameObject:
   - component: {fileID: 674349179}
   - component: {fileID: 674349178}
   m_Layer: 0
-  m_Name: benche (6)
+  m_Name: benche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6483,7 +6472,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.12696587}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6494,7 +6483,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.008178167}
   m_EdgeRadius: 0
 --- !u!212 &674349180
 SpriteRenderer:
@@ -7233,7 +7222,7 @@ GameObject:
   - component: {fileID: 768618302}
   - component: {fileID: 768618301}
   m_Layer: 0
-  m_Name: benche (7)
+  m_Name: benche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7321,7 +7310,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.12792984}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7332,7 +7321,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.010106094}
   m_EdgeRadius: 0
 --- !u!212 &768618303
 SpriteRenderer:
@@ -7483,7 +7472,7 @@ GameObject:
   - component: {fileID: 794561644}
   - component: {fileID: 794561643}
   m_Layer: 0
-  m_Name: benche (4)
+  m_Name: benche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7571,7 +7560,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.12792984}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7582,7 +7571,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.010106102}
   m_EdgeRadius: 0
 --- !u!212 &794561645
 SpriteRenderer:
@@ -7897,7 +7886,7 @@ GameObject:
   - component: {fileID: 846908445}
   - component: {fileID: 846908444}
   m_Layer: 0
-  m_Name: benche (5)
+  m_Name: benche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7985,7 +7974,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.1240741}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7996,7 +7985,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.010106094}
   m_EdgeRadius: 0
 --- !u!212 &846908446
 SpriteRenderer:
@@ -8063,7 +8052,7 @@ GameObject:
   - component: {fileID: 848688580}
   - component: {fileID: 848688579}
   m_Layer: 0
-  m_Name: benche (8)
+  m_Name: benche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8151,7 +8140,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.12795478}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8162,7 +8151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.0101561025}
   m_EdgeRadius: 0
 --- !u!212 &848688581
 SpriteRenderer:
@@ -8411,7 +8400,7 @@ Transform:
   m_GameObject: {fileID: 880272843}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -9.1109, y: 2.1199, z: 0}
+  m_LocalPosition: {x: -9.1109, y: 2.498, z: 0}
   m_LocalScale: {x: 0.13007419, y: 2.18257, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8526,7 +8515,7 @@ GameObject:
   - component: {fileID: 891427225}
   - component: {fileID: 891427226}
   m_Layer: 0
-  m_Name: island_bottom (12)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8874,7 +8863,7 @@ Transform:
   m_GameObject: {fileID: 928111247}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.202, y: 0.684, z: 0}
+  m_LocalPosition: {x: -2.202, y: 0.706, z: 0}
   m_LocalScale: {x: 1.1639, y: 1.159, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8958,7 +8947,7 @@ Transform:
   m_GameObject: {fileID: 942019755}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8125002, y: 0.83309996, z: 0}
+  m_LocalPosition: {x: -1.8125002, y: 0.8550999, z: 0}
   m_LocalScale: {x: 1.1639, y: 1.159, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11150,7 +11139,7 @@ GameObject:
   - component: {fileID: 1049904368}
   - component: {fileID: 1049904369}
   m_Layer: 0
-  m_Name: island_bottom (13)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11628,7 +11617,7 @@ GameObject:
   - component: {fileID: 1093892069}
   - component: {fileID: 1093892068}
   m_Layer: 0
-  m_Name: benche (1)
+  m_Name: benche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11716,7 +11705,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.12985766}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11727,7 +11716,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.010106146}
   m_EdgeRadius: 0
 --- !u!212 &1093892070
 SpriteRenderer:
@@ -11792,7 +11781,7 @@ GameObject:
   - component: {fileID: 1100190972}
   - component: {fileID: 1100190973}
   m_Layer: 0
-  m_Name: island_side_right
+  m_Name: island_side_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12219,7 +12208,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1124278943}
   - component: {fileID: 1124278945}
-  - component: {fileID: 1124278944}
   m_Layer: 0
   m_Name: Gas_cylinder
   m_TagString: Untagged
@@ -12242,51 +12230,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2028673159}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1124278944
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124278942}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.023157239, y: -0.011178911}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.32}
-    newSize: {x: 0.16, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1052649, y: 0.05605042}
-  m_EdgeRadius: 0
 --- !u!212 &1124278945
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12798,90 +12741,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transparencyValue: 0.7
   _transparencyFadeTime: 0.4
---- !u!1 &1190766546
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1190766547}
-  - component: {fileID: 1190766549}
-  m_Layer: 0
-  m_Name: island_bottom (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1190766547
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190766546}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.232, y: 0.303, z: 0}
-  m_LocalScale: {x: 3, y: 3.6378, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 69984127}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1190766549
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190766546}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 12
-  m_Sprite: {fileID: 21300000, guid: 3882ed043edd705478e2f284fdc524ed, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.32}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1191709513
 GameObject:
   m_ObjectHideFlags: 0
@@ -13041,6 +12900,7 @@ Transform:
   - {fileID: 1744105171}
   - {fileID: 236461098}
   - {fileID: 478914391}
+  - {fileID: 447400907}
   m_Father: {fileID: 1417045238}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1200273083
@@ -14464,8 +14324,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0073525906, y: -0.08980373}
-  m_Size: {x: 0.12568665, y: 0.1616338}
+  m_Offset: {x: -0.0073525906, y: -0.10777731}
+  m_Size: {x: 0.12568665, y: 0.12568665}
   m_Direction: 0
 --- !u!1 &1417045237
 GameObject:
@@ -14597,7 +14457,7 @@ GameObject:
   - component: {fileID: 1463826826}
   - component: {fileID: 1463826827}
   m_Layer: 0
-  m_Name: island_bottom (2)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14717,7 +14577,7 @@ GameObject:
   - component: {fileID: 1523982543}
   - component: {fileID: 1523982544}
   m_Layer: 0
-  m_Name: island_bottom (9)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15451,7 +15311,7 @@ GameObject:
   - component: {fileID: 1614888886}
   - component: {fileID: 1614888888}
   m_Layer: 0
-  m_Name: island_bottom (1)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15502,7 +15362,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 1.055934, y: 0.057134848}
   m_SpriteTilingProperty:
@@ -15700,7 +15560,7 @@ GameObject:
   - component: {fileID: 1634963698}
   - component: {fileID: 1634963699}
   m_Layer: 0
-  m_Name: island_bottom (11)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16086,7 +15946,7 @@ Transform:
   m_GameObject: {fileID: 1658397307}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.04, y: 0.688, z: 0}
+  m_LocalPosition: {x: -2.04, y: 0.71, z: 0}
   m_LocalScale: {x: 1.1639, y: 1.159, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16156,7 +16016,7 @@ GameObject:
   - component: {fileID: 1659047504}
   - component: {fileID: 1659047505}
   m_Layer: 0
-  m_Name: island_bottom (5)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16937,7 +16797,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017162412, y: 0.09419215}
+  m_Offset: {x: 0.00017162412, y: 0.12985772}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16948,7 +16808,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07581963, y: 0.0043224916}
+  m_Size: {x: 0.07581963, y: 0.01010602}
   m_EdgeRadius: 0
 --- !u!212 &1737925317
 SpriteRenderer:
@@ -17063,7 +16923,7 @@ GameObject:
   - component: {fileID: 1744105171}
   - component: {fileID: 1744105172}
   m_Layer: 0
-  m_Name: island_side_right
+  m_Name: island_side_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17805,7 +17665,7 @@ GameObject:
   - component: {fileID: 1859727000}
   - component: {fileID: 1859727001}
   m_Layer: 0
-  m_Name: island_bottom (15)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17939,7 +17799,7 @@ Transform:
   m_GameObject: {fileID: 1889196248}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7150002, y: 0.717, z: 0}
+  m_LocalPosition: {x: -1.7150002, y: 0.73899996, z: 0}
   m_LocalScale: {x: 1.1639, y: 1.159, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18533,7 +18393,7 @@ GameObject:
   - component: {fileID: 1980751519}
   - component: {fileID: 1980751520}
   m_Layer: 0
-  m_Name: island_bottom (3)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18881,7 +18741,7 @@ Transform:
   m_GameObject: {fileID: 2022774829}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9675001, y: 0.81390005, z: 0}
+  m_LocalPosition: {x: -1.9675001, y: 0.8359, z: 0}
   m_LocalScale: {x: 1.1639, y: 1.159, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19740,7 +19600,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0046151616, y: -0.5233077}
+  m_Offset: {x: 0.004615158, y: -0.39147937}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -19751,7 +19611,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14488402, y: 1.2761507}
+  m_Size: {x: 0.14488402, y: 1.0124941}
   m_EdgeRadius: 0
 --- !u!1 &2141023401
 GameObject:
@@ -19765,7 +19625,7 @@ GameObject:
   - component: {fileID: 2141023404}
   - component: {fileID: 2141023405}
   m_Layer: 0
-  m_Name: island_bottom (8)
+  m_Name: island_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19900,7 +19760,7 @@ Transform:
   m_GameObject: {fileID: 2144402311}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.0799, y: 3.1827, z: 0}
+  m_LocalPosition: {x: -8.0799, y: 3.627, z: 0}
   m_LocalScale: {x: 0.11108468, y: 2.0213394, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
