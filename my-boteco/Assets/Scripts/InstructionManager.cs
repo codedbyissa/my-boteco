@@ -31,6 +31,8 @@ public class InstructionManager : MonoBehaviour
         {
             instructionText.text = message; 
             panel.SetActive(true);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(panel.GetComponent<RectTransform>());
+
         }
     }
 

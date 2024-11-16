@@ -32,6 +32,12 @@ public class InterfacesControl : MonoBehaviour
     {
         currentInteractionId = id;
     }
+
+        public void OnUIClose()
+    {
+        isUIOpen = false;
+        GetComponent<PlayerController>().enabled = true;
+    }
 }
 
 
