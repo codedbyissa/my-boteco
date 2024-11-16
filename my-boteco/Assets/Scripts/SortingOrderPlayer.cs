@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,17 +17,22 @@ public class SortingOrderPlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collisionCount++;  // Incrementa o número de colisões ativas
-        _spriteRender.sortingOrder = 30;  // Altera o sortingOrder enquanto colide
+        if (!collision.GetComponent<ShowOnProximity>()){
+            collisionCount++;  
+            _spriteRender.sortingOrder = 30; 
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        collisionCount--;  // Decrementa o número de colisões ativas
-
-        if (collisionCount <= 0)  // Só restaura o sortingOrder original quando não há mais colisões
+        if(!collision.GetComponent<ShowOnProximity>())
         {
-            _spriteRender.sortingOrder = currentOrder;
+            collisionCount--;  
+
+            if (collisionCount <= 0)  
+            {
+                _spriteRender.sortingOrder = currentOrder;
+            }
         }
     }
 }

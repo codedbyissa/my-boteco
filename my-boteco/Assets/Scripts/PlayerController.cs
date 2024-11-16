@@ -17,10 +17,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Resetando a direção do player
         _playerDirection = Vector2.zero;
 
-        // Movendo com as setas direcionais
         if (Input.GetKey(KeyCode.UpArrow))
         {
             _playerDirection.y = 1;
@@ -39,7 +37,6 @@ public class PlayerController : MonoBehaviour
             _playerDirection.x = -1;
         }
 
-        // Verifica se há movimento e altera a animação
         if (_playerDirection.sqrMagnitude > 0)
         {
             if (_playerDirection.y != 0)
@@ -61,7 +58,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Movimenta o player com base na direção e velocidade
         _playerRigidbody2D.MovePosition(_playerRigidbody2D.position + _playerDirection * _playerSpeed * Time.fixedDeltaTime);
     }
 
