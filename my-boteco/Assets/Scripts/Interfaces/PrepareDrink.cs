@@ -10,6 +10,9 @@ public class PrepareDrink : MonoBehaviour
     [SerializeField] private Transform content;
     [SerializeField] private GameObject highlightPrefab;
 
+    [SerializeField] private GameObject progressBarPrefab;
+    [SerializeField] private GameObject drinksObj;
+
     private List<GameObject> items = new List<GameObject>();
     private int currentIndex = 0;
     private bool isItemSelected = false;
@@ -21,12 +24,11 @@ public class PrepareDrink : MonoBehaviour
 
     private Color colorSelect;
 
-     private Color colorConfirm;
+    private Color colorConfirm;
 
-    private void Awake(){
-        closeUI.onClick.AddListener(delegate { OpenUI(false); });
-        prepareButton.onClick.AddListener(delegate { ConfirmSelection(); });
-    }
+    private DrinkHolder itemSelected;
+
+    private LoadItem loadItem;
 
     void Start()
     {
@@ -52,19 +54,16 @@ public class PrepareDrink : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 NavigateToNextItem();
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            if(!isItemSelected){
+                
+            } else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+            {
                 SelectItem();
-            } else {
-                ConfirmSelection();
             }
-        }
+        } else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            ConfirmSelection(); 
 
-        if (Input.GetKeyDown(KeyCode.Escape) && isItemSelected)
+        } else if (Input.GetKeyDown(KeyCode.Escape))
         {
             CancelSelection();
         }
@@ -82,6 +81,8 @@ public class PrepareDrink : MonoBehaviour
     {
         isItemSelected = true;
 
+        itemSelected = items[currentIndex].GetComponent<DrinkHolder>();
+
         RemoveHighlight(items[currentIndex]);
 
         AddHighlight(items[currentIndex], colorConfirm);
@@ -92,6 +93,7 @@ public class PrepareDrink : MonoBehaviour
     private void CancelSelection()
     {
         isItemSelected = false;
+        itemSelected = null;
 
         RemoveHighlight(items[currentIndex]);
 
@@ -104,6 +106,12 @@ public class PrepareDrink : MonoBehaviour
     {
         if (isItemSelected)
         {
+            loadItem = ScriptableObject.CreateInstance<LoadItem>();
+            loadItem.sprite = itemSelected.drink.sprite;
+            loadItem.itemName = itemSelected.drink.itemName;
+            loadItem.itemTag = SlotTag.Drink;
+            loadItem.itemTime = itemSelected.drink.itemTime;
+            SpawnProgressBar(drinksObj.transform, loadItem);
             OpenUI(false);
         }
     }
@@ -121,11 +129,11 @@ public class PrepareDrink : MonoBehaviour
 
     private void RemoveHighlight(GameObject item)
     {
-        // Remove a borda de highlight se houver
+        
         if (currentHighlight != null)
         {
             Destroy(currentHighlight);
-            currentHighlight = null; // Reseta a referência
+            currentHighlight = null; 
         }
     }
 
@@ -148,14 +156,26 @@ public class PrepareDrink : MonoBehaviour
         if (prepareHighlight != null)
         {
             Destroy(prepareHighlight);
-            prepareHighlight = null; // Reseta a referência
+            prepareHighlight = null; 
         }
     }
+
+    public void SpawnProgressBar(Transform targetTransform, LoadItem loadItem)
+    {
+        GameObject newBar = Instantiate(progressBarPrefab, targetTransform.position, Quaternion.identity);
+        LoadingItem progressBar = newBar.GetComponent<LoadingItem>();
+        if (progressBar != null)
+        {
+            progressBar.Initialize(targetTransform, loadItem);
+        }
+    }
+
 
     private void ResetState()
     {
         currentIndex = 0;
         isItemSelected = false;
+        itemSelected = null;
 
         foreach (var item in items)
         {
@@ -168,18 +188,17 @@ public class PrepareDrink : MonoBehaviour
 
     public void OpenUI(bool value)
     {
-        AddHighlight(items[currentIndex], colorSelect);
         gameObject.SetActive(value);
 
         if(value)
         {
-            InstructionManager.Instance.ShowMessage("Use a seta direita do teclado [>] para navegar entre os itens. Pressione [Enter] para selecionar um item ou [ESC] para voltar e escolher outro.\nPressione [Enter] novamente para confirmar e preparar");
+            InstructionManager.Instance.ShowMessage("Use a seta direita do teclado [>] para navegar entre os itens. Pressione [Enter] para selecionar um item e [Enter] novamente para confirmar e\n iniciar o preparo ou [ESC] para voltar e escolher outro. Pressione [X] para cancelar e sair da intereção.");
+            ResetState();
         }
         else
         {
             InstructionManager.Instance.HideMessage();
             interfacesControl.OnUIClose();
-            ResetState();
         }
     }
 }
