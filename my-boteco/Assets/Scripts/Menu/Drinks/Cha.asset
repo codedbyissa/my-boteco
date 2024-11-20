@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42e982316748934294e2233cce32af9, type: 3}
   m_Name: Cha
   m_EditorClassIdentifier: 
-  sprite: {fileID: -505598273, guid: bb644fc5e2673e14d86f3b2da7dcae66, type: 3}
+  id: 12
   itemName: "Ch\xE1"
   itemTag: 1
   itemTime: 20
+  sprite: {fileID: -505598273, guid: bb644fc5e2673e14d86f3b2da7dcae66, type: 3}

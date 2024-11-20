@@ -1,13 +1,18 @@
 using System;
-using TMPro;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Menu/Drink")]
-public class Drink : ScriptableObject
+public class Drink : ScriptableObject, IOrderItem
 {
-   public Sprite sprite;
-   public String itemName;
+    public int id;
+    public string itemName;
+    public SlotTag itemTag = SlotTag.Drink;
+    public int itemTime;
+    public Sprite sprite;
 
-   public SlotTag itemTag = SlotTag.Drink;
-   public int itemTime;
+    public int Id => id;
+    public string ItemName => itemName;
+    public int ItemTime => itemTime;
+    public Sprite Sprite => sprite;
+
 }

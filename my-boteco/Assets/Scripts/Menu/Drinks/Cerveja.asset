@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42e982316748934294e2233cce32af9, type: 3}
   m_Name: Cerveja
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 0ec0f9a87ffc5be4588f174acf553146, type: 3}
+  id: 2
   itemName: Cerveja
   itemTag: 1
   itemTime: 5
+  sprite: {fileID: 21300000, guid: 0ec0f9a87ffc5be4588f174acf553146, type: 3}

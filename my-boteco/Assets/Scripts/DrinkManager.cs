@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DrinkHolder : MonoBehaviour
+public class DrinkManager : MonoBehaviour
 {
     public Drink drink;  
 }

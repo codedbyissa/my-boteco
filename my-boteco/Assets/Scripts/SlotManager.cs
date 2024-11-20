@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SlotHolder : MonoBehaviour
+public class SlotManager : MonoBehaviour
 {
     public ItemSlot slot;
 
@@ -13,7 +13,6 @@ public class SlotHolder : MonoBehaviour
         var slotImage = transform.Find("Sprite")?.GetComponent<Image>();
         slotImage.sprite = slot.sprite;
         slotImage.enabled = true; 
-        Debug.Log("Equipou o Drink " + item.itemName);
     }
 
     public void ClearSlot()

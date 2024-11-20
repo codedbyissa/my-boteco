@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42e982316748934294e2233cce32af9, type: 3}
   m_Name: Cafe
   m_EditorClassIdentifier: 
-  sprite: {fileID: -451662926, guid: bb644fc5e2673e14d86f3b2da7dcae66, type: 3}
+  id: 11
   itemName: "Caf\xE9"
   itemTag: 1
   itemTime: 15
+  sprite: {fileID: -451662926, guid: bb644fc5e2673e14d86f3b2da7dcae66, type: 3}

@@ -26,7 +26,7 @@ public class PrepareDrink : MonoBehaviour
 
     private Color colorConfirm;
 
-    private DrinkHolder itemSelected;
+    private DrinkManager itemSelected;
 
     private LoadItem loadItem;
 
@@ -81,7 +81,7 @@ public class PrepareDrink : MonoBehaviour
     {
         isItemSelected = true;
 
-        itemSelected = items[currentIndex].GetComponent<DrinkHolder>();
+        itemSelected = items[currentIndex].GetComponent<DrinkManager>();
 
         RemoveHighlight(items[currentIndex]);
 
@@ -107,10 +107,11 @@ public class PrepareDrink : MonoBehaviour
         if (isItemSelected)
         {
             loadItem = ScriptableObject.CreateInstance<LoadItem>();
-            loadItem.sprite = itemSelected.drink.sprite;
+            loadItem.itemid = itemSelected.drink.id;
             loadItem.itemName = itemSelected.drink.itemName;
             loadItem.itemTag = SlotTag.Drink;
             loadItem.itemTime = itemSelected.drink.itemTime;
+            loadItem.sprite = itemSelected.drink.sprite;
             SpawnProgressBar(drinksObj.transform, loadItem);
             OpenUI(false);
         }
@@ -192,7 +193,7 @@ public class PrepareDrink : MonoBehaviour
 
         if(value)
         {
-            InstructionManager.Instance.ShowMessage("Use a seta direita do teclado [>] para navegar entre os itens. Pressione [Enter] para selecionar um item e [Enter] novamente para confirmar e\n iniciar o preparo ou [ESC] para voltar e escolher outro. Pressione [X] para cancelar e sair da intereção.");
+            InstructionManager.Instance.ShowMessage("Use a seta direita do teclado [>] para navegar entre os itens. Pressione [Enter] para selecionar um item e [Enter] novamente \npara confirmar e iniciar o preparo ou [ESC] para voltar e escolher outro. Pressione [X] para cancelar e sair da intereção.");
             ResetState();
         }
         else

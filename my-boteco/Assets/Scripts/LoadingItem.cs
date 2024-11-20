@@ -4,7 +4,7 @@ using System.Linq;
 
 public class LoadingItem : MonoBehaviour
 {
-    [SerializeField] private SlotHolder[] slotHolders;
+    [SerializeField] private SlotManager[] slotManager;
     private TextMeshPro countdownText; 
     private SpriteRenderer fillBar;
     private SpriteRenderer backgroundBar;
@@ -23,7 +23,7 @@ public class LoadingItem : MonoBehaviour
         fillBar = transform.Find("ProgressBarFill")?.GetComponent<SpriteRenderer>();
         backgroundBar = transform.Find("ProgressBarBackground")?.GetComponent<SpriteRenderer>();
         countdownText = transform.Find("count")?.GetComponent<TextMeshPro>();
-        slotHolders = FindObjectsOfType<SlotHolder>();
+        slotManager = FindObjectsOfType<SlotManager>();
     }
 
     public void Initialize(Transform targetObject, LoadItem item)
@@ -80,7 +80,7 @@ public class LoadingItem : MonoBehaviour
 
     public void AssignItemToSlot(ItemSlot itemSlot)
     {
-        SlotHolder availableSlot = slotHolders.FirstOrDefault(slot => slot.slot == null);
+        SlotManager availableSlot = slotManager.FirstOrDefault(slot => slot.slot == null);
 
         if (availableSlot != null)
         {

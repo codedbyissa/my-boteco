@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42e982316748934294e2233cce32af9, type: 3}
   m_Name: Refrigerente
   m_EditorClassIdentifier: 
-  sprite: {fileID: -787939614, guid: bb644fc5e2673e14d86f3b2da7dcae66, type: 3}
+  id: 10
   itemName: Refrigerante
   itemTag: 1
   itemTime: 4
+  sprite: {fileID: -787939614, guid: bb644fc5e2673e14d86f3b2da7dcae66, type: 3}
