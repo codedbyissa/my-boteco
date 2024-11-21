@@ -1,7 +1,4 @@
-using System;
-using System.Diagnostics;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ShowOnProximity : MonoBehaviour
 {
@@ -15,9 +12,9 @@ public class ShowOnProximity : MonoBehaviour
     {
         objectRenderer = GetComponent<Renderer>();
         objectRenderer.enabled = false;
-
         interfacesControl = player.GetComponent<InterfacesControl>();
     }
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -26,6 +23,11 @@ public class ShowOnProximity : MonoBehaviour
             objectRenderer.enabled = true;
             InstructionManager.Instance.ShowMessage("Pressione [X] para interagir!");
             interfacesControl.SetCurrentInteraction(id);
+        }
+
+        TakeOrder takeOrder = GetComponent<TakeOrder>();
+        if (takeOrder != null) {
+            interfacesControl.SetTakeOrder(takeOrder);
         }
     }
 

@@ -28,9 +28,9 @@ public class OrderManager : MonoBehaviour
     public Order NewOrder(Table Table)
     {
         List<IOrderItem> orderContent = new List<IOrderItem>();
-        int randomItemsNumber = Random.Range(2, 5);
+        int randomNumber = Random.Range(2, 5);
 
-        for (int i = 0; i < randomItemsNumber; i++)
+        for (int i = 0; i < randomNumber; i++)
         {
             orderContent.Add(availableDrinks[Random.Range(0, availableDrinks.Count)]); 
         }

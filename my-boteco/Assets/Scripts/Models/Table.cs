@@ -1,9 +1,21 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
 
-[CreateAssetMenu(menuName = "Menu/Table")]
 public class Table : ScriptableObject
 {
     public int id;
-    public bool occupied = false;
+    public bool occupied => customers.Count > 0;
+    public List<Customer> customers = new List<Customer>();
 
+    public void AddCustomer(Customer customer)
+    {
+        if (customers.Count >= 4) return; 
+        customers.Add(customer);
+    }
+
+    public void RemoveCustomer(Customer customer)
+    {
+        customers.Remove(customer);
+    }
 }
