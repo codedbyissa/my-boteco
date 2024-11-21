@@ -7,8 +7,6 @@ public class SlotManager : MonoBehaviour
 
     public void EquipItem(ItemSlot item)
     {
-        if (item == null) return;
-
         slot = item;
         var slotImage = transform.Find("Sprite")?.GetComponent<Image>();
         slotImage.sprite = slot.sprite;
