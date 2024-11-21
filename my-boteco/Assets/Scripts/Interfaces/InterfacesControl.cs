@@ -40,7 +40,6 @@ public class InterfacesControl : MonoBehaviour
                     boolAction.Invoke(isUIOpen);
                 } else if (action is Action noParamAction)
                 {
-
                     noParamAction.Invoke();
                 }
             }
